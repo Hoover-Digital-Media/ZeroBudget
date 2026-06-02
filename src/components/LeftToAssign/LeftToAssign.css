@@ -1,0 +1,56 @@
+.left-to-assign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 2px solid var(--green);
+  gap: 0.25rem;
+  text-align: center;
+}
+
+.left-to-assign--over {
+  border-color: var(--red);
+}
+
+.left-to-assign--zero {
+  border-color: var(--green);
+  background: color-mix(in srgb, var(--green) 8%, var(--surface));
+}
+
+.lta-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.lta-amount {
+  font-size: 2.25rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.left-to-assign--over .lta-amount {
+  color: var(--red);
+}
+
+.left-to-assign--zero .lta-amount {
+  color: var(--green);
+}
+
+.lta-warning {
+  font-size: 0.8rem;
+  color: var(--red);
+  font-weight: 600;
+}
+
+.lta-success {
+  font-size: 0.8rem;
+  color: var(--green);
+  font-weight: 600;
+}

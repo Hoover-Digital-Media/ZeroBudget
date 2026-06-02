@@ -1,0 +1,62 @@
+.income-section h2 {
+  margin: 0 0 1rem;
+}
+
+.income-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.income-list__empty {
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.income-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.income-row input {
+  flex: 1;
+}
+
+.income-row__name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.income-row__amount {
+  min-width: 7rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.income-form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.income-form input {
+  flex: 1;
+  min-width: 8rem;
+}
+
+.income-total {
+  margin-top: 1rem;
+  text-align: right;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.income-total strong {
+  color: var(--text);
+  font-size: 1rem;
+}
