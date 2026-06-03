@@ -26,6 +26,13 @@ function AppContent() {
           <h1 className="app-title">ZeroBudget</h1>
           <p className="app-subtitle">Give every dollar a job.</p>
         </div>
+        <ol className="app-steps">
+          <li><span className="step-num">1</span> Add your income</li>
+          <li className="step-arrow">→</li>
+          <li><span className="step-num">2</span> Set category budgets</li>
+          <li className="step-arrow">→</li>
+          <li><span className="step-num">3</span> Log transactions as you spend</li>
+        </ol>
       </header>
 
       <main className="app-main">
@@ -38,7 +45,10 @@ function AppContent() {
 
         <section className="categories-section">
           <div className="categories-header">
-            <h2>Budget Categories</h2>
+            <div>
+              <h2>Budget Categories</h2>
+              <p className="section-hint">Set a spending limit for each category. Click any budgeted amount to edit it. Use the quick-add on each card to log a purchase, or use the form below.</p>
+            </div>
             <form className="add-category-form" onSubmit={handleAddCategory}>
               <input
                 type="text"

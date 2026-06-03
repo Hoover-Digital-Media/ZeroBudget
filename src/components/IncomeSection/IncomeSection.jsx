@@ -22,6 +22,7 @@ export default function IncomeSection() {
   return (
     <section className="income-section card">
       <h2>Income</h2>
+      <p className="section-hint">Add every source of money coming in this month — paycheck, freelance, side income. Enter a name and the amount, then click Add.</p>
 
       <ul className="income-list">
         {incomeSources.map(src => (

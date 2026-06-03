@@ -20,6 +20,7 @@ export default function TransactionForm() {
   return (
     <section className="transaction-form card">
       <h2>Add Transaction</h2>
+      <p className="section-hint">Record a purchase or payment. Choose the category it belongs to, enter the amount, and add an optional description so you remember what it was.</p>
       <form onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-field">
